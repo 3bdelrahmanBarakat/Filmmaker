@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Yousef Sediq Portfolio"
+version = "1.0.0"
+id = "artifacts/yousef-sediq"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20928
+
+[services.development]
+run = "pnpm --filter @workspace/yousef-sediq run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/yousef-sediq", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/yousef-sediq/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20928"
+BASE_PATH = "/"

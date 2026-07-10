@@ -1,0 +1,108 @@
+Build a Premium Filmmaker Portfolio Website
+Build a modern, cinematic portfolio for Yousef Sediq – Senior Video Editor & Filmmaker using the attached screenshots as the primary design reference. The style should be dark, minimal, premium, and inspired by Sam Kolder, Apple, and Awwwards websites. Use “Yossef Sediq” as the main title of the website.
+Tech
+* Next.js + React
+* Tailwind CSS
+* Framer Motion
+* Lenis smooth scrolling
+* Responsive
+* SEO optimized
+Structure
+1. Hero
+* Fixed transparent navbar (Home, Projects, About, Contact)
+* Minimal personal logo
+* Large typewriter-style paragraph:
+Senior Video Editor & Filmmaker creating cinematic commercials, branded content and digital campaigns through storytelling, editing, motion graphics and color. Over 5 years of experience helping brands transform ideas into films that connect with audiences.
+* Small info below:
+    * Egypt
+    * Email
+* Dark grain background.
+
+2. Showreel
+Large full-width autoplay, muted, looping video with rounded corners.
+
+3. Trusted By
+Grayscale company logos that become white on hover.
+
+4. Software
+Grid of software cards/icons:
+* DaVinci Resolve
+* Premiere Pro
+* After Effects
+* Photoshop
+* Illustrator
+* Fusion
+* Audition
+* Media Encoder
+* Figma
+
+5. Categories
+Large cinematic cards (2-column desktop, 1-column mobile).
+Each card:
+* Background video
+* Plays on hover
+* Slight zoom animation
+* Opens category page
+Categories:
+* Video Editing
+* Color Grading
+* Motion Graphics
+* Filmmaking
+Each category page automatically loads its own projects.
+
+6. About
+Create a short professional biography using this information:
+* Senior Video Editor & Filmmaker
+* Based in Egypt
+* 5+ years experience
+* 300+ completed projects
+* Experienced in editing, directing, motion graphics, color grading and storytelling
+* BA in Drama & Theatre Criticism (Ain Shams University)
+* Currently studying filmmaking at Jesuit Cairo Cinema School
+* Passionate about cinematic storytelling and commercial filmmaking
+
+7. Achievements / CTA
+Use a cinematic background with large animated numbers:
+* 300+ Projects
+* 5+ Years Experience
+* 50+ Brand Partnerships
+Button: Let's Work Together
+
+8. Footer
+Navigation + Social Links + Email.
+
+Animations
+Use premium, subtle animations:
+* Smooth scrolling
+* Fade/reveal
+* Parallax
+* Hover lift
+* Video hover playback
+* Magnetic buttons
+* Scroll progress bar
+* Loading screen with logo
+Avoid excessive animations.
+
+CMS Structure
+Make everything editable from one file:
+/data/siteData.ts
+Store:
+* About text
+* Statistics
+* Companies
+* Categories
+* Projects
+* Software
+* Social links
+* Navigation
+* Contact info
+Assets should come from:
+
+/public/videos
+/public/images
+/public/logos
+
+No hardcoded text or media inside components.
+
+Goal
+The final website should feel like a high-end creative studio rather than a standard portfolio—minimal, cinematic, fast, elegant, and easy to maintain. It should immediately communicate that I'm an experienced filmmaker and senior video editor working on premium commercial projects. DON’T FORGET TO USE PROVIDED SCREENSHOTS AS A REFERENCE FOR THE DESIGN AND STRUCTURE
