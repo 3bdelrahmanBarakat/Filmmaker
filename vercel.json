@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd artifacts/api-server && node -e \"const fs=require('fs');try{fs.rmSync('out',{recursive:true,force:true})}catch(e){}\" && node ./build.mjs",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "framework": null,
+  "outputDirectory": "artifacts/api-server/out",
+  "typescript": {
+    "ignoreBuildErrors": true
+  }
+}

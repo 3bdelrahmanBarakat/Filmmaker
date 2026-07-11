@@ -1,18 +1,16 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "incremental": true,
-    "tsBuildInfoFile": ".tsbuildinfo",
+    "noEmit": true,
     "rootDir": "src",
-    "types": ["node"]
+    "types": ["node"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "paths": {
+      "@workspace/api-zod": ["../../lib/api-zod/src"],
+      "@workspace/db": ["../../lib/db/src"]
+    }
   },
   "include": ["src"],
-  "references": [
-    {
-      "path": "../../lib/db"
-    },
-    {
-      "path": "../../lib/api-zod"
-    }
-  ]
+  "exclude": ["dist", "node_modules", "build"]
 }

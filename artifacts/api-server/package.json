@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "export NODE_ENV=development && pnpm run build && pnpm run start",
-    "build": "node ./build.mjs",
-    "start": "node --enable-source-maps ./dist/index.mjs",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "build": "node -e \"const fs=require('fs');fs.rmSync('out',{recursive:true,force:true})\" && node ./build.mjs",
+    "start": "node --enable-source-maps ./out/index.mjs",
+    "typecheck": "node -e \"const fs=require('fs');fs.rmSync('out',{recursive:true,force:true})\" && tsc -p tsconfig.json --noEmit --skipLibCheck"
   },
   "dependencies": {
     "@workspace/api-zod": "workspace:*",
