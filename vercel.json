@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm build:vercel",
+  "buildCommand": "pnpm build && mkdir -p public && cp -r artifacts/yousef-sediq/dist/* public/",
   "outputDirectory": "public",
   "installCommand": "pnpm install"
 }
