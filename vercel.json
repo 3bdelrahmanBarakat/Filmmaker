@@ -1,5 +1,5 @@
 {
   "buildCommand": "pnpm build",
-  "outputDirectory": "artifacts/yousef-sediq/dist/public",
+  "outputDirectory": "artifacts/yousef-sediq/dist",
   "installCommand": "pnpm install"
 }
